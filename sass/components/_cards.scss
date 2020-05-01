@@ -13,7 +13,7 @@
         left: 0;
         width: 100%;
         backface-visibility: hidden;
-        border-radius: 3px;
+        border-radius: $radius-small;
         overflow: hidden;
         box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
@@ -159,10 +159,7 @@
 
     // BACK SIDE STYLING
     &__cta {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        @include center;
         width: 90%;
         text-align: center;
     }
